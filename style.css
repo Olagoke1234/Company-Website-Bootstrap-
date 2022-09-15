@@ -1,0 +1,30 @@
+body {
+  background: url(images/Background-picture.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.navbar-header img {
+  height: 40px;
+  width: 40px;
+  margin-top: -10px;
+}
+
+.navbar-collapse ul li:hover {
+  border-bottom: 1px solid rgb(222, 225, 4);
+}
+
+.jumbotron {
+  background: none;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  margin: 50px auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    max-width: 500px;
+  }
+}
