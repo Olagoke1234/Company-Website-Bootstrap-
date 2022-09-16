@@ -107,7 +107,7 @@ body {
   height: 60px;
   background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
-  bottom: 0px;
+  bottom: -150px;
   width: 100vw;
   padding: 10px 20px 20px 10px;
   margin-left: -15px;
@@ -138,7 +138,7 @@ body {
     height: 60px;
     background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
-    bottom: -650px;
+    bottom: -850px;
     width: 100vw;
     padding: 10px 20px 20px 10px;
     margin-left: -15px;
