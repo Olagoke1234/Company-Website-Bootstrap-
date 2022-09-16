@@ -3,6 +3,8 @@ body {
   height: 100vh;
   background-size: 100% 100%;
   background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
 }
 
 .navbar-header img {
@@ -21,10 +23,136 @@ body {
   color: white;
   max-width: 800px;
   margin: 50px auto 0 auto;
+  font: Arial, Helvetica, sans-serif;
 }
 
+.row {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item svg {
+  width: 80px;
+  height: 80px;
+  color: rgb(254, 219, 65);
+}
+
+.item h2 {
+  color: white;
+  text-align: center;
+  font-size: 27px;
+}
+
+.item p {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  text-shadow: -2px -2px black;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn {
+  width: 200px;
+  background-color: rgba(254, 219, 65, 0.7);
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(254, 219, 65);
+  color: white;
+}
+
+.btn.active {
+  background-color: rgb(254, 219, 65);
+  color: white;
+}
+
+.footer {
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  padding: 10px 20px 20px 10px;
+  margin-left: -15px;
+  margin-top: auto;
+}
+
+.footer p,
+.footer a {
+  color: white;
+}
 @media (max-width: 768px) {
   .jumbotron {
     max-width: 500px;
+  }
+  .row {
+    width: 60%;
+    margin: auto auto;
+  }
+  .item-container {
+    flex-direction: column;
+  }
+  .btn-success {
+    width: 150px;
+    background-color: rgba(254, 219, 65, 0.9);
+    font-size: 14px;
+  }
+  .footer {
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: -250px;
+    width: 100vw;
+    padding: 10px 20px 20px 10px;
+    margin-left: -15px;
+  }
+  .item svg {
+    width: 60px;
+    height: 60px;
+    color: rgb(254, 219, 65);
+  }
+
+  .item h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .item p {
+    color: white;
+    text-align: center;
+    font-size: 12px;
+  }
+  .footer p,
+  .footer a {
+    font-size: 13px;
   }
 }
